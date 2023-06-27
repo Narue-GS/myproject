@@ -4,11 +4,13 @@ import { styled } from "styled-components"
 
 import Image from 'next/image'
 
-export default function Banner() {
+
+
+export default function Banner(props:{txt:string}) {
   return (
     <Okra>
       <Image
-        src={"/joaozinhogameplays.jpeg"}
+        src={props.txt}
         width={1000}
         height={500}
         alt="Um homem lindo"
@@ -17,6 +19,8 @@ export default function Banner() {
     </Okra>
   )
 }
+
+export const batata = "aaaa"
 
 const Okra = styled.section`
   display: flex;
